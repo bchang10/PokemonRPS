@@ -1,0 +1,106 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-image: url('images/Background.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#score{
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.container1 {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3 {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    align-items: center;
+}
+
+#sound {
+    width: 0;
+    height: 0;
+}
+
+#message {
+    background-color: white;
+    border-radius: 40px;
+    border: 6px solid lightblue;
+    outline: 4px solid rgb(91, 188, 221);
+    width: 1000px;
+    height: 150px;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 37.5px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 300px;
+    width: 300px;
+    font-size: 40px;
+    border-radius: 15px;
+    border-width: 6px;
+}
+
+button:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+#charmander {
+    background-color: rgb(255, 0, 0);
+    /* font-family: 'Pokemon Solid', sans-serif;
+    color: white;
+    -webkit-text-stroke: 3px black; */
+    background-image: url('images/Charmander.png');
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#bulbasaur {
+    background-color: rgb(9, 255, 132);
+    /* font-family: 'Pokemon Solid', sans-serif;
+    color: white;
+    -webkit-text-stroke: 3px black; */
+    background-image: url('images/Bulbasaur.png');
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#squirtle {
+    background-color: aqua;
+    /* font-family: 'Pokemon Solid', sans-serif;
+    color: white;
+    -webkit-text-stroke: 3px black; */
+    background-image: url('images/Squirtle.png');
+    background-position: center;
+    background-size: 100% 100%;
+}
