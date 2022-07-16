@@ -64,7 +64,7 @@ body {
     height: 150px;
 }
 
-#message h1 {
+#displayMessage {
     font-size: 30px;
     font-family: sans-serif;
     text-align: center;
