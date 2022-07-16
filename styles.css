@@ -18,6 +18,17 @@ body {
     padding-top: 10px;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+}
+
 .container1 {
     display: flex;
     flex: 1;
@@ -53,7 +64,7 @@ body {
     height: 150px;
 }
 
-h1 {
+#message h1 {
     font-size: 30px;
     font-family: sans-serif;
     text-align: center;
@@ -68,18 +79,16 @@ button {
     font-size: 40px;
     border-radius: 15px;
     border-width: 6px;
+    border-color: black;
 }
 
 button:hover {
-    opacity: 0.75;
+    opacity: 0.8;
     cursor: pointer;
 }
 
 #charmander {
     background-color: rgb(255, 0, 0);
-    /* font-family: 'Pokemon Solid', sans-serif;
-    color: white;
-    -webkit-text-stroke: 3px black; */
     background-image: url('images/Charmander.png');
     background-position: center;
     background-size: 100% 100%;
@@ -87,9 +96,6 @@ button:hover {
 
 #bulbasaur {
     background-color: rgb(9, 255, 132);
-    /* font-family: 'Pokemon Solid', sans-serif;
-    color: white;
-    -webkit-text-stroke: 3px black; */
     background-image: url('images/Bulbasaur.png');
     background-position: center;
     background-size: 100% 100%;
@@ -97,9 +103,6 @@ button:hover {
 
 #squirtle {
     background-color: aqua;
-    /* font-family: 'Pokemon Solid', sans-serif;
-    color: white;
-    -webkit-text-stroke: 3px black; */
     background-image: url('images/Squirtle.png');
     background-position: center;
     background-size: 100% 100%;
