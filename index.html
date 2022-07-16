@@ -3,24 +3,25 @@
     <title>Pokemon RPS</title>
     <link rel="stylesheet" href="styles.css">
     <script src="code.js"></script>
-    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
 </head>
 <body>
-    <!-- <div class="header">
-        <div id="score">Score: 0</div> -->
-    <img src="images/Title.png" style="height: 150px; width: auto; padding-bottom: 40px; padding-top: 25px" class="center">
-    <!-- </div> -->
+    <h1 id="score">Score: 0</h1>
+    <img src="images/Title.png" style="height: 150px; width: auto" class="center">
+    <h1 id="randomPokemon" style="text-align: center; padding-top: 15px; padding-bottom: 30px">The Computer Chose: </h1>
+    
     <div class="container1">
-        <button onclick="Bulbasaur()" id="bulbasaur"></button>
-        <button onclick="Charmander()" id="charmander"></button>
-        <button onclick="Squirtle()" id="squirtle"></button>
+        <button onclick="Bulbasaur();randomPokemon();updateScore()" id="bulbasaur"></button>
+        <button onclick="Charmander();randomPokemon();updateScore()" id="charmander"></button>
+        <button onclick="Squirtle();randomPokemon();updateScore()" id="squirtle"></button>
     </div>
     <div class="container2">
-        <div id="message">
-            <h1 id="displayMessage"></h1>
+        <div id="textbox">
+            <h1 id="message"></h1>
         </div>
     </div>
-    <audio controls autoplay loop>
-        <source src="sounds/BackgroundMusic.mp3" type="audio/mpeg" />
+    <img src="images/Play.png" id="icon" onclick="playMusic()">
+
+    <audio id="music" loop>
+        <source src="sounds/BackgroundMusic.mp3" type="audio/mp3">
     </audio>
 </body>
