@@ -1,3 +1,6 @@
+/***************
+LAYOUT
+***************/
 body {
     margin: 0;
     width: 100vw;
@@ -7,23 +10,6 @@ body {
     flex-direction: column;
     background-image: url('images/Background.jpg');
     background-repeat: no-repeat;
-    background-position: center;
-}
-
-#score {
-    -webkit-text-stroke: 2px black;
-    font-size: 40px;
-    font-family: sans-serif;
-    color: white;
-    margin: 10px 0px 0px 10px;
-}
-
-#randomPokemon {
-    -webkit-text-stroke: 2px black;
-    font-size: 40px;
-    font-family: sans-serif;
-    color: red;
-    margin: 0px 0px 0px 0px;
 }
 
 .center {
@@ -58,6 +44,10 @@ body {
     align-items: center;
 }
 
+/***************
+TEXT
+***************/
+
 #textbox {
     background-color: white;
     border-radius: 40px;
@@ -77,6 +67,30 @@ body {
     color: black;
 }
 
+#score {
+    -webkit-text-stroke: 2px black;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+    margin: 10px 0px 0px 10px;
+}
+
+#randomPokemon {
+    -webkit-text-stroke: 2px black;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: red;
+    margin: 0px 0px 0px 0px;
+}
+
+/***************
+BUTTONS
+***************/
+
+@keyframes MoveUpDown {
+    50% {bottom: 20px}
+  }
+
 button {
     height: 300px;
     width: 300px;
@@ -89,6 +103,7 @@ button {
 button:hover {
     opacity: 0.8;
     cursor: pointer;
+    animation: MoveUpDown 1s linear infinite;
 }
 
 #charmander {
@@ -96,13 +111,15 @@ button:hover {
     background-image: url('images/Charmander.png');
     background-position: center;
     background-size: 100% 100%;
+    position: relative;
 }
 
 #bulbasaur {
-    background-color: rgb(9, 255, 132);
+    background-color: rgb(9, 255, 62);
     background-image: url('images/Bulbasaur.png');
     background-position: center;
     background-size: 100% 100%;
+    position: relative;
 }
 
 #squirtle {
@@ -110,7 +127,12 @@ button:hover {
     background-image: url('images/Squirtle.png');
     background-position: center;
     background-size: 100% 100%;
+    position: relative;
 }
+
+/***************
+ICONS
+***************/
 
 #icon {
     height: 75px;
