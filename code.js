@@ -67,7 +67,7 @@ function updateScore() {
 
 function playMusic() {
     var music=document.getElementById("music");
-    music.volume=0.5;
+    music.volume=0.3;
     if(music.paused){
         music.play();
         icon.src = "images/pause.png";
