@@ -70,9 +70,9 @@ function playMusic() {
     music.volume=0.3;
     if(music.paused){
         music.play();
-        icon.src = "images/pause.png";
+        icon.src = "images/Pause.png";
     } else {
         music.pause();
-        icon.src = "images/play.png";
+        icon.src = "images/Play.png";
     }
 }
